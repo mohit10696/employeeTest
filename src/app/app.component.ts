@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to employee app';
+
+  onAddProjectManager(managerData:any){
+
+  }
+  onAddDeveloper(developerData:any){
+
+  }
+  onAddDesigner(designerData:any){
+
+  }
 }

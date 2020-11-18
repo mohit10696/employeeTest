@@ -1,2 +1,13 @@
 <div class="center">{{title}}</div>
 <hr>
+<app-form-component
+  (updataProjectManager)="onAddProjectManager($event)"
+  (updataDeveloper)="onAddDeveloper($event)"
+  (updataDesigner)="onAddDesigner($event)"
+></app-form-component>
+<hr>
+<app-project-manager></app-project-manager>
+<hr>
+<app-developer></app-developer>
+<hr>
+<app-designer></app-designer>

@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { ProjectManagerComponent } from './project-manager/project-manager.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { DesignerComponent } from './designer/designer.component';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectManagerComponent,
     DeveloperComponent,
-    DesignerComponent
+    DesignerComponent,
+    FormComponentComponent
   ],
   imports: [
     BrowserModule,

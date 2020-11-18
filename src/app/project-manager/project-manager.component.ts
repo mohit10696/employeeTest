@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-project-manager',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-manager.component.css']
 })
 export class ProjectManagerComponent implements OnInit {
+
+  @Input() element: {
+    fname: string,
+    lname: string,
+    contact: string,
+    salary: string
+  };
 
   constructor() { }
 
