@@ -8,7 +8,7 @@ import { ProjectManagerComponent } from './project-manager/project-manager.compo
 import { DeveloperComponent } from './developer/developer.component';
 import { DesignerComponent } from './designer/designer.component';
 import { FormComponentComponent } from './form-component/form-component.component';
-
+import { CommonModule } from "@angular/common";
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +18,7 @@ import { FormComponentComponent } from './form-component/form-component.componen
     FormComponentComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule

@@ -6,8 +6,9 @@
   (updataDesigner)="onAddDesigner($event)"
 ></app-form-component>
 <hr>
-<app-project-manager></app-project-manager>
+<app-project-manager [ProjectManagerData]='ManagerList'></app-project-manager>
 <hr>
-<app-developer></app-developer>
+<app-developer [DeveloperData]='DeveloperList'></app-developer>
 <hr>
-<app-designer></app-designer>
+<app-designer [DesignerData]='DesignerList' ></app-designer>
+
