@@ -1,3 +1,4 @@
+import { colorservice } from './color.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -23,7 +24,7 @@ import { CommonModule } from "@angular/common";
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [colorservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

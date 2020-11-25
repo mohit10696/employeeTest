@@ -1,19 +1,17 @@
 <p>project-manager Table!</p>
-<table style="width:50%;border: 1px solid black;border-collapse: collapse;">
+<table>
   <tr>
     <th>Firstname</th>
     <th>Lastname</th>
     <th>Contact</th>
     <th>Salary</th>
   </tr>
-  <tr *ngFor="let item of Data" [ngStyle] = "{backgroundColor: getcolor(item)}">
+  <tr *ngFor="let item of Data" [ngStyle]  = "{backgroundColor: colorservices.getcolor(item)}">
 
-    <!-- <div *ngIf="true"> -->
     <th>{{item.fname}}</th>
     <th>{{item.lname}}</th>
     <th>{{item.contact}}</th>
     <th>{{item.salary}}</th>
-  <!-- </div> -->
   </tr>
 </table>
 

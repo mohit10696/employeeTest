@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { colorservice } from '../color.service';
 
 @Component({
   selector: 'app-developer',
@@ -7,28 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DeveloperComponent implements OnInit {
 
-  @Input('DeveloperData') Data: [{
+  @Input('developerData') Data: [{
     fname: string,
     lname: string,
     contact: string,
     salary: string
   }];
 
-  constructor() { }
+  constructor(public colorservices:colorservice) { }
 
   ngOnInit(): void {
-  }
-  
-  getcolor(name:any){
-
-    if (name.salary < 10000){
-      return 'Azure';
-    }else if (name.salary < 20000){
-      return 'BlueViolet';
-    }else if (name.salary < 30000){
-      return 'DarkCyan';
-    }
-    return 'DarkSlateGrey';
   }
 
 }

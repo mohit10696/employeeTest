@@ -41,6 +41,10 @@ export class FormComponentComponent implements OnInit {
   }
 
   addData(){
+      if(this.fname==undefined||this.lname==undefined||this.salary==undefined||this.contact==undefined){
+        alert('Please Enter Value in all fields');
+        return;
+      }
       this.designationNumber = this.designation.nativeElement.options.selectedIndex;
 
       if (this.designationNumber === 0){

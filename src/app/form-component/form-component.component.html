@@ -1,12 +1,12 @@
 <p style="font-size: large;font-weight: bold;">Employee form </p>
 Enter First name:
-<input type="text" name="fname" id=""  [(ngModel)]="fname"> <br><br>
+<input type="text" name="fname" id=""  [(ngModel)]="fname" maxlength="20" (keydown.space)="$event.preventDefault()"> <br><br>
 Enter Last name:
-<input type="text" name="lname" id="" [(ngModel)]="lname"><br><br>
+<input type="text" name="lname" id="" [(ngModel)]="lname" maxlength="20" (keydown.space)="$event.preventDefault()"> <br><br>
 Enter Salary:
-<input type="number" name="salary" id="" [(ngModel)]="salary"><br><br>
+<input type="number" name="salary" id="" [(ngModel)]="salary" (keydown.space)="$event.preventDefault()"> <br><br>
 Enter Contact:
-<input type="number" name="contact" id="" [(ngModel)]="contact"><br><br>
+<input type="number" name="contact" id="" [(ngModel)]="contact" max="9999999999" (keydown.space)="$event.preventDefault()"> <br><br>
 Enter Designation:
 <select name="designation" id="" #designation>
   <option value="volvo">Project Manager</option>

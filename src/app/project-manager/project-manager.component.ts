@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { colorservice } from '../color.service';
 
 @Component({
   selector: 'app-project-manager',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ProjectManagerComponent implements OnInit {
 
-  @Input('ProjectManagerData') Data: [{
+  @Input('projectManagerData') Data: [{
     fname: string,
     lname: string,
     contact: string,
@@ -16,21 +17,8 @@ export class ProjectManagerComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(public colorservices:colorservice) { }
 
   ngOnInit(): void {
   }
-
-  getcolor(name:any){
-
-    if (name.salary < 10000){
-      return 'Azure';
-    }else if (name.salary < 20000){
-      return 'BlueViolet';
-    }else if (name.salary < 30000){
-      return 'DarkCyan';
-    }
-    return 'DarkSlateGrey';
-  }
-
 }
